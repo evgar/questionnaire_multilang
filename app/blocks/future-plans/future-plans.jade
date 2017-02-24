@@ -1,0 +1,7 @@
+mixin future-plans(val)
+	if val.state == "true"
+		input.future-plans__answer(id='#{ val.name }' name='chooseYourWay' type='radio' checked)
+		label.future-plans__point(for='#{ val.name }') #{ val.label }
+	else
+		input.future-plans__answer(id='#{ val.name }' name='chooseYourWay' type='radio')
+		label.future-plans__point(for='#{ val.name }') #{ val.label }

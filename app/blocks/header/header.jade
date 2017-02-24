@@ -1,0 +1,14 @@
+include ../csssr-logo/csssr-logo
+include ../secret-logo/secret-logo
+include ../title/title
+
+mixin header()
+	header.header
+		.header__logos
+			.header__csssr-logo
+				+csssr-logo
+			.header__secret-logo
+				+secret-logo
+		.header__title
+			+title
+		block
